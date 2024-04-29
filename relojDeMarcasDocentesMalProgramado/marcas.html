@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Entrada/Salida</title>
+    <link rel="stylesheet" href="styleMarcas.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Marcar Entrada</h1>
+        <form action="marcar.php" method="post">
+            <label for="ci">Ingrese su cédula de identidad:</label><br>
+            <input type="text" id="ci" name="ci" required><br><br>
+            <label for="observacion">Observación:</label><br>
+            <input type="text" id="observacion_entrada" name="observacion_entrada"><br><br>
+            <input type="submit" value="Marcar Entrada">
+        </form>
+        <br>
+    <h1>Marcar Salida</h1>    
+        <form action="marcar.php" method="post">
+            <label for="ci_salida">Ingrese su cédula de identidad:</label><br>
+            <input type="text" id="ci_salida" name="ci_salida" required><br><br>
+            <label for="observacion_salida">Observación:</label><br>
+            <input type="text" id="observacion_salida" name="observacion_salida"><br><br>
+            <input type="submit" value="Marcar Salida">
+        </form>
+    </div>
+</body>
+</html>
